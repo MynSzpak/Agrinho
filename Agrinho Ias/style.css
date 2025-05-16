@@ -1,100 +1,90 @@
+/* Resetando margens e paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
+/* Definindo o estilo do corpo */
 body {
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7e9; /* Cor de fundo suave, relacionada ao verde */
     color: #333;
-}
-
-/* Container centralizado */
-.container {
-    width: 80%;
-    margin: 0 auto;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #1e6a34;
-    color: #fff;
-    padding: 30px 0;
+    background: #4CAF50; /* Verde mais forte, representando o campo */
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-header h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
-/* Introdução */
-.intro {
-    background-color: #fff;
-    padding: 50px 0;
+/* Seção de Introdução */
+.introducao {
     text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #555;
 }
 
-.intro p {
-    font-size: 1.25rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* Galeria de Imagens */
-.image-gallery {
-    background-color: #e2f0d9;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.image-gallery h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.gallery {
+/* Seção de conteúdo */
+.content {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px;
+    background: #fff;
 }
 
-.gallery-item {
-    max-width: 300px;
+.campo, .cidade, .conexao {
+    width: 30%;
+    padding: 20px;
     border-radius: 8px;
-    overflow: hidden;
-    background-color: #fff;
+    background: #f4f4f4;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
     text-align: center;
 }
 
-.gallery-item img {
+.campo h2, .cidade h2, .conexao h2 {
+    font-size: 1.8rem;
+    color: #388E3C; /* Verde mais suave */
+    margin-bottom: 10px;
+}
+
+.campo p, .cidade p, .conexao p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Estilo das imagens */
+.image {
     width: 100%;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.gallery-item p {
-    background-color: #1e6a34;
-    color: #fff;
-    padding: 10px;
-    font-size: 1rem;
-}
-
-/* Rodapé */
+/* Estilo do rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
     text-align: center;
-}
-
-footer p {
-    font-size: 1rem;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
